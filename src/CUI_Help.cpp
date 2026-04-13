@@ -11,7 +11,8 @@ CUI_Help::CUI_Help(void) {
     tb->x = 1;
     tb->y = 11;
     tb->xsize = 78 + ((INTERNAL_RESOLUTION_X-640)/8);
-    tb->ysize = 36+ ((INTERNAL_RESOLUTION_Y-480)/8);
+    // Bottom-anchor: fill from tb->y down to ~5 rows above screen bottom.
+    tb->ysize = (INTERNAL_RESOLUTION_Y/8) - tb->y - 5;
     //tb->text = "This is a test of the textbox reader\n\nit is supposed to work";
 
     FILE *fp;
@@ -81,7 +82,8 @@ void CUI_Help::update() {
 void CUI_Help::draw(Drawable *S) {
 
     tb->xsize = 78 + ((INTERNAL_RESOLUTION_X-640)/8);
-    tb->ysize = 36+ ((INTERNAL_RESOLUTION_Y-480)/8);
+    // Bottom-anchor: fill from tb->y down to ~5 rows above screen bottom.
+    tb->ysize = (INTERNAL_RESOLUTION_Y/8) - tb->y - 5;
 
     if (S->lock()==0) {
         UI->draw(S);
