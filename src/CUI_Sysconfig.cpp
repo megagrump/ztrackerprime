@@ -389,7 +389,7 @@ CUI_Sysconfig::CUI_Sysconfig(void) {
         b->caption = " Open device   ";
         b->x = 4+21;
         b->y = 48;
-        b->xsize = 15;
+        b->xsize = 14;
         b->ysize = 1;
         b->OnClick = (ActFunc)BTNCLK_ForgetMidiOutDevice;
         midiout_action_button = b;
@@ -425,7 +425,7 @@ CUI_Sysconfig::CUI_Sysconfig(void) {
         b->caption = " Open device   ";
         b->x = 4+21+37;
         b->y = 48;
-        b->xsize = 15;
+        b->xsize = 14;
         b->ysize = 1;
         b->OnClick = (ActFunc)BTNCLK_ForgetMidiInDevice;
         midiin_action_button = b;
