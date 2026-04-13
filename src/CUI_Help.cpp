@@ -9,7 +9,7 @@ CUI_Help::CUI_Help(void) {
     tb = new TextBox;
     UI->add_element(tb, 0);
     tb->x = 1;
-    tb->y = 10;
+    tb->y = 11;
     tb->xsize = 78 + ((INTERNAL_RESOLUTION_X-640)/8);
     tb->ysize = 36+ ((INTERNAL_RESOLUTION_Y-480)/8);
     //tb->text = "This is a test of the textbox reader\n\nit is supposed to work";
