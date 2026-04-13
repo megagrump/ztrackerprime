@@ -388,7 +388,7 @@ CUI_Sysconfig::CUI_Sysconfig(void) {
         UI->add_element(b,tabindex++);
         b->caption = " Open device   ";
         b->x = 4+21;
-        b->y = 46;
+        b->y = 47;
         b->xsize = 14;
         b->ysize = 1;
         b->OnClick = (ActFunc)BTNCLK_ForgetMidiOutDevice;
@@ -424,7 +424,7 @@ CUI_Sysconfig::CUI_Sysconfig(void) {
         UI->add_element(b,tabindex++);
         b->caption = " Open device   ";
         b->x = 4+21+37;
-        b->y = 46;
+        b->y = 47;
         b->xsize = 14;
         b->ysize = 1;
         b->OnClick = (ActFunc)BTNCLK_ForgetMidiInDevice;
