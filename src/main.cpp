@@ -3310,7 +3310,7 @@ int main(int argc, char *argv[])
   }
 
   bool launched_from_bundle = false;
-  char bundle_resources_path[PATH_MAX] = "";
+  char bundle_resources_path[1024] = "";
 #if defined(__APPLE__)
   // When launched as a .app bundle (double-clicked in Finder), argv[0] points
   // at zt.app/Contents/MacOS/zt and the CWD is '/'. Jump into Contents/Resources
